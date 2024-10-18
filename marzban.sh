@@ -123,7 +123,7 @@ install_docker() {
 
 install_marzban_script() {
     #FETCH_REPO="Gozargah/Marzban-scripts"
-    SCRIPT_URL="https://github.com/kawe0/set/raw/main/marzban.sh"
+    SCRIPT_URL="https://github.com/kawe0/set1/raw/main/marzban.sh"
     #https://github.com/$FETCH_REPO/raw/master/marzban.sh"
     colorized_echo blue "Installing marzban script"
     curl -sSL $SCRIPT_URL | install -m 755 /dev/stdin /usr/local/bin/marzban
@@ -133,7 +133,7 @@ install_marzban_script() {
 install_marzban() {
     local marzban_version=$1
     # Fetch releases
-    FILES_URL_PREFIX="https://raw.githubusercontent.com/kawe0/set/main"
+    FILES_URL_PREFIX="https://raw.githubusercontent.com/kawe0/set1/main"
      #https://raw.githubusercontent.com/Gozargah/Marzban/master
     
     mkdir -p "$DATA_DIR"
@@ -224,7 +224,7 @@ marzban_cli() {
 
 update_marzban_script() {
     #FETCH_REPO="Gozargah/Marzban-scripts"
-    SCRIPT_URL="https://github.com/kawe0/set/raw/main/marzban.sh"
+    SCRIPT_URL="https://github.com/kawe0/set1/raw/main/marzban.sh"
     #https://github.com/$FETCH_REPO/raw/master/marzban.sh"
     colorized_echo blue "Updating marzban script"
     curl -sSL $SCRIPT_URL | install -m 755 /dev/stdin /usr/local/bin/marzban
